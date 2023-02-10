@@ -1,0 +1,76 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Permanent+Marker&family=Potta+One&family=Solitreo&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  position: relative;
+}
+.inner {
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+}
+.xy {
+  /* position: absolute; */
+  color: #dcdcdc;
+  /* bottom: 10px;
+  left: 30px; */
+}
+.xy h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+}
+.xy2 {
+  position: absolute;
+  color: #949494;
+  bottom: 10px;
+  left: 30px;
+  display: none;
+}
+.xy2 h1 {
+  font-size: 2rem;
+}
+.x:hover {
+  color: #f8f8f8;
+  transition: color 0.2s ease-in-out;
+}
+.centre {
+  position: relative;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 255, 0.276);
+  position: absolute;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+/* .img3 {
+  background-image: url('/xy4-min.jpg');
+}
+.img2 {
+  background-image: url('/xy 6-min.jpg');
+}
+.img1 {
+  background-image: url('/xy 2.1-min.jpg');
+} */
+.img3 {
+  background-image: url('/xy4-min.jpg');
+}
+.img2 {
+  background-image: url('/xy 6-min.jpg');
+}
+.img1 {
+  background-image: url('/xy 2.1-min.jpg');
+}
