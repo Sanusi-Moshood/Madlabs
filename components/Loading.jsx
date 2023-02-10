@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from '../styles/Loading.module.css';
 import { gsap } from 'gsap';
+import Image from 'next/image';
 
 const Loading = () => {
   useEffect(() => {

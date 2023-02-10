@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Navlink from 'next/link';
 
 export default function Navbar() {
@@ -6,6 +7,8 @@ export default function Navbar() {
     <nav>
       <div className='logo'>xy</div>
       <div className='navlinks'></div>
+
+      <Image src={'/xy4-min.jpg'} width={'300'} height={400} />
     </nav>
   );
 }
