@@ -11,3 +11,9 @@ html {
   font-family: 'Permanent Marker';
   src: url('../fonts/PermanentMarker-Regular.ttf');
 }
+
+:root {
+  --black: #000000;
+  --grey1: #dcdcdc;
+  --grey2: #949494;
+}
