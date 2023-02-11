@@ -7,8 +7,6 @@ export default function Navbar() {
     <nav>
       <div className='logo'>xy</div>
       <div className='navlinks'></div>
-
-      <Image src={'/xy4-min.jpg'} fill className='imgs' />
     </nav>
   );
 }

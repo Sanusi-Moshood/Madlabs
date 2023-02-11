@@ -6,3 +6,8 @@
 html {
   font-size: 7vw;
 }
+
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url('../fonts/PermanentMarker-Regular.ttf');
+}

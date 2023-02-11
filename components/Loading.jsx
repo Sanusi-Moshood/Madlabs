@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import styles from '../styles/Loading.module.css';
 import { gsap } from 'gsap';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const Loading = () => {
   useEffect(() => {
