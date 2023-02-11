@@ -66,11 +66,17 @@
   background-image: url('/xy 2.1-min.jpg');
 } */
 .img3 {
-  background-image: url('/xy4-min.jpg');
+  background-image: url('/xy 2.1-min.jpg');
+}
+.img3 .inner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .img2 {
-  background-image: url('/2022_04_24_09_06_IMG_0860.JPG');
+  background-image: url('/xy 6-min.jpg');
 }
 .img1 {
-  background-image: url('/xy 2.1-min.jpg');
+  background-image: url('/xy4-min.jpg');
 }

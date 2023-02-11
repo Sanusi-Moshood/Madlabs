@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className='logo'>xy</div>
       <div className='navlinks'></div>
 
-      <Image src={'/xy4-min.jpg'} width={'300'} height={400} />
+      <Image src={'/xy4-min.jpg'} fill className='imgs' />
     </nav>
   );
 }
