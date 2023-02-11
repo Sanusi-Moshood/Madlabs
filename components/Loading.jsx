@@ -14,7 +14,6 @@ const Loading = () => {
         delay: 1,
         width: '4rem',
         duration: 1,
-        ease: 'expo.inOut',
       })
         .to(
           '#xy',
@@ -35,18 +34,15 @@ const Loading = () => {
         .to('#img3', {
           height: 0,
           duration: 1.5,
-          ease: 'expo.inOut',
         })
         .to('#img2', {
           height: 0,
           duration: 1.5,
-          ease: 'expo.inOut',
         })
         .to('#centre', {
           height: 0,
-          // width: 0,
+          width: 0,
           duration: 1.5,
-          ease: 'expo.inOut',
         })
         .to('#xy', {
           opacity: '0',
@@ -54,7 +50,6 @@ const Loading = () => {
         .to('#container', {
           height: 0,
           duration: 1.5,
-          ease: 'expo.inOut',
         });
     });
 
@@ -62,7 +57,6 @@ const Loading = () => {
       delay: 1,
       width: '4rem',
       duration: 1,
-      ease: 'expo.inOut',
     })
       .to(
         '#xy',
@@ -83,18 +77,15 @@ const Loading = () => {
       .to('#img3', {
         height: 0,
         duration: 1.5,
-        ease: 'expo.inOut',
       })
       .to('#img2', {
         height: 0,
         duration: 1.5,
-        ease: 'expo.inOut',
       })
       .to('#centre', {
         height: 0,
         width: 0,
         duration: 1.5,
-        ease: 'expo.inOut',
       })
       .to('#xy', {
         opacity: '0',
@@ -102,7 +93,6 @@ const Loading = () => {
       .to('#container', {
         height: 0,
         duration: 1.5,
-        ease: 'expo.inOut',
       });
   }, []);
 

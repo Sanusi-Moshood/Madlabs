@@ -7,14 +7,7 @@ export default function Home() {
       <Head>
         <title>Home</title>
         <meta name='keywords' content='ninja' />
-        <link
-          rel='stylesheet'
-          href="@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-"
-        />
       </Head>
-      <h3>Under construction 🚧🚧🚧🚧👷‍♂️</h3>
-      {/* <p>Dev - wale</p> */}
     </>
   );
 }
