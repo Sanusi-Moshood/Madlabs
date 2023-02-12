@@ -17,21 +17,21 @@
 }
 .x:hover,
 .menu:hover {
-  color: #d78b18;
+  color: var(--orange);
   transition: color 0.2s ease-in-out;
 }
 .navlinks {
-  font-family: 'vanilla';
+  font-family: 'rubik';
   display: flex;
   gap: 40px;
   font-size: 20px;
 }
 .link {
   text-decoration: none;
-  color: black;
+  color: var(--grey1);
 }
 .active {
-  color: #d78b18;
+  color: var(--orange);
 }
 
 .menu {
@@ -74,9 +74,9 @@
   }
 
   .menuactive {
-    color: #d78b18;
+    color: var(--orange);
   }
   .active {
-    color: #d78b18;
+    color: var(--orange);
   }
 }

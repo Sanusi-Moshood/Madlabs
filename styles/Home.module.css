@@ -1,0 +1,55 @@
+.container {
+  padding: 5%;
+}
+
+.herotext {
+  font-family: 'inconsolata';
+  position: relative;
+  text-align: center;
+  color: var(--grey1);
+}
+.herotext h1 {
+  font-size: 1.52em;
+}
+/* .herotext:hover.herotext::after {
+  font-family: 'asul';
+  position: absolute;
+  content: 'Azeez - Adesina';
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color: var(--grey1);
+
+  top: 0;
+  left: 0;
+  text-align: center;
+} */
+
+.heroimg {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.img {
+  width: 50%;
+  background-image: url('/xy 2.1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.info {
+}
+.p {
+  font-size: 0.5em;
+  text-align: right;
+  font-family: 'ibm';
+  width: 50%;
+}
+.smalltext {
+  font-size: 0.3em;
+}

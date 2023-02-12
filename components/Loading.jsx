@@ -37,19 +37,19 @@ const Loading = () => {
         })
         .to('#img2', {
           height: 0,
-          duration: 1.5,
+          duration: 0.5,
         })
         .to('#centre', {
           height: 0,
           width: 0,
-          duration: 1.5,
+          duration: 1,
         })
         .to('#xy', {
           opacity: '0',
         })
         .to('#container', {
           height: 0,
-          duration: 1.5,
+          duration: 0.5,
         });
     });
 
@@ -85,14 +85,14 @@ const Loading = () => {
       .to('#centre', {
         height: 0,
         width: 0,
-        duration: 0.5,
+        duration: 1,
       })
       .to('#xy', {
         opacity: '0',
       })
       .to('#container', {
         height: 0,
-        duration: 1.5,
+        duration: 0.5,
       });
   }, []);
 

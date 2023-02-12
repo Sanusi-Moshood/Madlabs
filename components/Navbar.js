@@ -40,15 +40,6 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href={'/about'}
-            onClick={navToggle}
-            className={`${styles.link} ${
-              router.pathname === '/about' ? styles.active : ''
-            }`}
-          >
-            About
-          </Link>
-          <Link
             onClick={navToggle}
             href={'/service'}
             className={`${styles.link} ${
