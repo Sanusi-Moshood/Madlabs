@@ -47,7 +47,7 @@ const Loading = () => {
         .to('#xy', {
           opacity: '0',
         })
-        .to('#container', {
+        .to('#coverer', {
           height: 0,
           duration: 0.5,
         });
@@ -90,14 +90,14 @@ const Loading = () => {
       .to('#xy', {
         opacity: '0',
       })
-      .to('#container', {
+      .to('#coverer', {
         height: 0,
         duration: 0.5,
       });
   }, []);
 
   return (
-    <div className={styles.container} id={'container'}>
+    <div className={styles.container} id={'coverer'}>
       <div className={styles.inner}>
         <div className={styles.xy} id={'xy'}>
           <h1>
@@ -107,9 +107,15 @@ const Loading = () => {
         </div>
         <div className={styles.centre} id={'centre'}>
           <div className={styles.imgCont}>
-            <div className={` ${styles.img1} ${styles.img}`} id={'img1'}></div>
-            <div className={`${styles.img2} ${styles.img}`} id={'img2'}></div>
-            <div className={`${styles.img3} ${styles.img}`} id={'img3'}></div>
+            <div className={` ${styles.img1} ${styles.img}`} id={'img1'}>
+              <Image src={'/xy_2_1_min-compress1.jpg'} fill objectFit='cover' />
+            </div>
+            <div className={`${styles.img2} ${styles.img}`} id={'img2'}>
+              <Image src={'/xy_6_min-compress1.jpg'} fill objectFit='cover' />
+            </div>
+            <div className={`${styles.img3} ${styles.img}`} id={'img3'}>
+              <Image src={'/xy_2_1_min-compress1.jpg'} fill objectFit='cover' />
+            </div>
           </div>
         </div>
       </div>
