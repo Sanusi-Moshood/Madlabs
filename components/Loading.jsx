@@ -80,12 +80,12 @@ const Loading = () => {
       })
       .to('#img2', {
         height: 0,
-        duration: 1.5,
+        duration: 0.5,
       })
       .to('#centre', {
         height: 0,
         width: 0,
-        duration: 1.5,
+        duration: 0.5,
       })
       .to('#xy', {
         opacity: '0',
@@ -104,7 +104,6 @@ const Loading = () => {
             <span className={styles.x}>X</span>
             <span className={`x ${styles.x}`}>Y</span>
           </h1>
-          <h1></h1>
         </div>
         <div className={styles.centre} id={'centre'}>
           <div className={styles.imgCont}>
