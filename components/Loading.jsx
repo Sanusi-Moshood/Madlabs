@@ -11,7 +11,7 @@ const Loading = () => {
 
     mm.add('(max-width: 380px', () => {
       tl.to('#centre', {
-        delay: 1,
+        delay: 2.5,
         width: '4rem',
         duration: 1,
       })
@@ -54,7 +54,7 @@ const Loading = () => {
     });
 
     tl.to('#centre', {
-      delay: 1,
+      delay: 3,
       width: '4rem',
       duration: 1,
     })
@@ -108,7 +108,7 @@ const Loading = () => {
         <div className={styles.centre} id={'centre'}>
           <div className={styles.imgCont}>
             <div className={` ${styles.img1} ${styles.img}`} id={'img1'}>
-              <Image src={'/xy4.jpg'} fill objectFit='cover' />
+              <Image src={'/xy3.jpg'} fill objectFit='cover' />
             </div>
             <div className={`${styles.img2} ${styles.img}`} id={'img2'}>
               <Image src={'/xy 6.jpg'} fill objectFit='cover' />
