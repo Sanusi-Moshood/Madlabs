@@ -37,7 +37,7 @@ const Loading = () => {
         })
         .to('#img2', {
           height: 0,
-          duration: 0.5,
+          duration: 1.5,
         })
         .to('#centre', {
           height: 0,
@@ -80,7 +80,7 @@ const Loading = () => {
       })
       .to('#img2', {
         height: 0,
-        duration: 0.5,
+        duration: 1.5,
       })
       .to('#centre', {
         height: 0,
