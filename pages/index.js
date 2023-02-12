@@ -8,7 +8,9 @@ export default function Home() {
           <h1>AZEEZ ADESINA</h1>
         </div>
         <div className={styles.heroimg}>
-          <div className={styles.img}></div>
+          <div className={styles.img}>
+            <Image src={'/xy 2.1.jpg'} fill objectFit='cover' />
+          </div>
           {/* <Image width={500} height={500} src={'/xy 2.1.jpg'} /> */}
           <p className={styles.p}>
             Portrait photographer 📷 based in Ibadan, Nigeria.

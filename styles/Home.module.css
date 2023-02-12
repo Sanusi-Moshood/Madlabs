@@ -36,10 +36,11 @@
 
 .img {
   width: 50%;
-  background-image: url('/xy 2.1.jpg');
+  /* background-image: url('/xy 2.1.jpg'); */
   background-position: center;
   background-size: cover;
   height: 300px;
+  position: relative;
 }
 
 .info {
