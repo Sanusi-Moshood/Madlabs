@@ -108,13 +108,13 @@ const Loading = () => {
         <div className={styles.centre} id={'centre'}>
           <div className={styles.imgCont}>
             <div className={` ${styles.img1} ${styles.img}`} id={'img1'}>
-              <Image src={'/xy_2_1_min-compress1.jpg'} fill objectFit='cover' />
+              <Image src={'/xy4.jpg'} fill objectFit='cover' />
             </div>
             <div className={`${styles.img2} ${styles.img}`} id={'img2'}>
-              <Image src={'/xy_6_min-compress1.jpg'} fill objectFit='cover' />
+              <Image src={'/xy 6.jpg'} fill objectFit='cover' />
             </div>
             <div className={`${styles.img3} ${styles.img}`} id={'img3'}>
-              <Image src={'/xy_2_1_min-compress1.jpg'} fill objectFit='cover' />
+              <Image src={'/xy 2.1.jpg'} fill objectFit='cover' />
             </div>
           </div>
         </div>
