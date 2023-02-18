@@ -246,4 +246,7 @@
   .parent div {
     height: 11rem;
   }
+  .abs {
+    display: none;
+  }
 }
