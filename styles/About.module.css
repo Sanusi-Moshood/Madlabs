@@ -1,0 +1,97 @@
+.container {
+  padding: 5%;
+}
+
+.herotext {
+  font-family: 'inconsolata';
+  position: relative;
+  text-align: center;
+  color: var(--black);
+}
+.herotext h1 {
+  font-size: 1.52em;
+  cursor: default;
+}
+.herotext span {
+  position: relative;
+}
+.herotext span:hover::after {
+  font-family: 'inconsolata';
+  position: absolute;
+  font-size: 1.57rem;
+  font-weight: bold;
+  width: 100%;
+  color: rgb(94, 59, 27);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  /* text-align: center; */
+}
+
+.b1:hover::after {
+  content: 'A';
+}
+.b2:hover::after {
+  content: 'Z';
+}
+.b3:hover::after {
+  content: 'E';
+}
+.b4:hover::after {
+  content: 'E';
+}
+.b5:hover::after {
+  content: 'Z';
+}
+.b6:hover::after {
+  content: '';
+}
+.b7:hover::after {
+  content: 'A';
+}
+.b8:hover::after {
+  content: 'D';
+}
+.b9:hover::after {
+  content: 'E';
+}
+.b10:hover::after {
+  content: 'S';
+}
+.b11:hover::after {
+  content: 'I';
+}
+.b12:hover::after {
+  content: 'N';
+}
+.b13:hover::after {
+  content: 'A';
+}
+.heroimg {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.img {
+  width: 50%;
+  /* background-image: url('/xy 2.1.jpg'); */
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+}
+
+.info {
+}
+.p {
+  font-size: 0.5em;
+  text-align: right;
+  font-family: 'ibm';
+  width: 50%;
+}
+.smalltext {
+  font-size: 0.3em;
+}

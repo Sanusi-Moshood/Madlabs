@@ -4,14 +4,18 @@
 }
 
 body {
-  background-color: #000000;
-  color: var(--grey1);
+  background-color: var(--grey1);
+  color: var(--black);
 }
 
 html {
   font-size: 7vw;
 }
 
+@font-face {
+  font-family: 'pacifico';
+  src: url('../fonts/Charmonman-Regular.ttf');
+}
 @font-face {
   font-family: 'Permanent Marker';
   src: url('../fonts/PermanentMarker-Regular.ttf');
@@ -23,6 +27,14 @@ html {
 @font-face {
   font-family: 'ibm';
   src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'ibmL';
+  src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf');
+}
+@font-face {
+  font-family: 'ibmM';
+  src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf');
 }
 @font-face {
   font-family: 'rubik';
@@ -42,4 +54,18 @@ html {
   --grey1: #dcdcdc;
   --grey2: #949494;
   --orange: #dc600e;
+}
+
+.footer {
+  font-family: 'ibm';
+  font-size: clamp(15px, 0.3rem, 40px);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-top: 0.7px solid black;
+}
+.footer a {
+  text-decoration: none;
+  color: #dc600e;
 }

@@ -41,6 +41,16 @@ export default function Navbar() {
           </Link>
           <Link
             onClick={navToggle}
+            href={'/about'}
+            className={`${styles.link} ${
+              pathname === '/about' ? styles.active : ''
+            }`}
+          >
+            {' '}
+            About
+          </Link>
+          <Link
+            onClick={navToggle}
             href={'/service'}
             className={`${styles.link} ${
               pathname === '/service' ? styles.active : ''

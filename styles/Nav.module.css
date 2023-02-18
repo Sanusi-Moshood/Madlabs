@@ -1,34 +1,41 @@
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* background-blend-mode: difference; */
 }
 .nav {
   width: 95%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: auto;
 }
 
 .logo .xy h2 {
   font-family: 'Permanent Marker', cursive;
   font-size: 50px;
   cursor: pointer;
+  color: var(--black);
 }
 .x:hover,
 .menu:hover {
   color: var(--orange);
   transition: color 0.2s ease-in-out;
 }
+.x {
+}
 .navlinks {
   font-family: 'rubik';
   display: flex;
-  gap: 40px;
+  gap: 25px;
   font-size: 20px;
 }
 .link {
   text-decoration: none;
-  color: var(--grey1);
+  color: var(--black);
 }
 .active {
   color: var(--orange);
@@ -40,6 +47,7 @@
   justify-content: center;
   font-size: 40px;
   display: none;
+  z-index: 9;
 }
 
 @media only screen and (max-width: 700px) {
@@ -54,23 +62,24 @@
     display: none;
   }
   .menuopen {
-    display: flex;
-    flex-direction: column;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
-    height: 100%;
+    flex-direction: column;
+    height: 100vh;
     width: 100%;
-    background-color: black;
     align-items: center;
-    /* padding-top: 90px; */
-    justify-content: center;
+    padding-top: 60px;
+    background-color: black;
     font-size: 60px;
+    z-index: 8 !important;
+    display: flex;
+    -webkit-animation: showNav 1s ease-in;
+    animation: showNav 0.5s ease-in;
   }
   .menu {
     font-size: 40px;
     display: block;
-    z-index: 99;
   }
 
   .menuactive {

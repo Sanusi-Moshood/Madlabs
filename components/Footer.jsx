@@ -1,5 +1,12 @@
 import React from 'react';
+import Link from 'next/link';
 
-export default function Footer() {
-  return <footer></footer>;
-}
+const Footer = () => {
+  return (
+    <div className='footer'>
+      Designed and developed by <Link href={'#'}>Sanusi Moshood</Link>
+    </div>
+  );
+};
+
+export default Footer;
