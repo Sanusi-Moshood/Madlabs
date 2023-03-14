@@ -71,8 +71,8 @@ const Loading = () => {
       )
       .to('#centre', {
         duration: 1,
-        width: '300px',
-        height: '400px',
+        width: '450px',
+        height: '600px',
       })
       .to('#img3', {
         height: 0,
@@ -100,21 +100,18 @@ const Loading = () => {
     <div className={styles.container} id={'coverer'}>
       <div className={styles.inner}>
         <div className={styles.xy} id={'xy'}>
-          <h1>
-            <span className={styles.x}>X</span>
-            <span className={`x ${styles.x}`}>Y</span>
-          </h1>
+          <Image src={'/logwr.svg'} id={'intlog'} fill />
         </div>
         <div className={styles.centre} id={'centre'}>
           <div className={styles.imgCont}>
             <div className={` ${styles.img1} ${styles.img}`} id={'img1'}>
-              <Image src={'/xy3.jpg'} fill objectFit='cover' />
+              <Image src={'/three.jfif'} fill objectFit='cover' />
             </div>
             <div className={`${styles.img2} ${styles.img}`} id={'img2'}>
-              <Image src={'/xy 6.jpg'} fill objectFit='cover' />
+              <Image src={'/two.jfif'} fill objectFit='cover' />
             </div>
             <div className={`${styles.img3} ${styles.img}`} id={'img3'}>
-              <Image src={'/xy 2.1.jpg'} fill objectFit='cover' />
+              <Image src={'/one.jfif'} fill objectFit='cover' />
             </div>
           </div>
         </div>

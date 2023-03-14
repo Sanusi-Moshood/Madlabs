@@ -2,8 +2,7 @@
   width: 100%;
   position: fixed;
   z-index: 99;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: var(--grey1);
   /* background-blend-mode: difference; */
 }
 .nav {
@@ -13,32 +12,55 @@
   justify-content: space-between;
   margin: auto;
 }
-
-.logo .xy h2 {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 50px;
-  cursor: pointer;
-  color: var(--black);
-}
-.x:hover,
-.menu:hover {
-  color: var(--orange);
-  transition: color 0.2s ease-in-out;
-}
-.x {
+.logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
 }
 .navlinks {
-  font-family: 'rubik';
   display: flex;
-  gap: 25px;
+  gap: 30px;
   font-size: 20px;
+  font-weight: 600;
+}
+.nvrc {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.nico {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.ico {
+  font-size: 30px;
+}
+.nico button {
+  background: linear-gradient(112.62deg, #bb0303 29.4%, #dc321c 105.15%);
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-width: 0px;
+}
+@media only screen and (max-width: 1000px) {
+  .nico button {
+    display: none;
+  }
 }
 .link {
   text-decoration: none;
   color: var(--black);
 }
 .active {
-  color: var(--orange);
+  color: var(--purple);
 }
 
 .menu {
@@ -83,9 +105,13 @@
   }
 
   .menuactive {
-    color: var(--orange);
+    color: var(--grey1);
   }
   .active {
-    color: var(--orange);
+    background: linear-gradient(112.62deg, #bb0303 29.4%, #aa1f0d 105.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 }

@@ -37,10 +37,11 @@
   transition: color 0.2s ease-in-out;
 }
 .centre {
+  margin-top: 40px;
   position: relative;
 
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .img {
