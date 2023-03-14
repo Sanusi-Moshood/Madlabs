@@ -100,7 +100,7 @@ const Loading = () => {
     <div className={styles.container} id={'coverer'}>
       <div className={styles.inner}>
         <div className={styles.xy} id={'xy'}>
-          <Image src={'/logwr.svg'} id={'intlog'} fill />
+          <Image src={'/Group.svg'} id={'intlog'} fill />
         </div>
         <div className={styles.centre} id={'centre'}>
           <div className={styles.imgCont}>

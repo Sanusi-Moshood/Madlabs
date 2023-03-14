@@ -11,7 +11,10 @@ body {
   color: var(--black);
   font-family: 'Inter', sans-serif;
 }
-
+section {
+  padding-top: 180px !important;
+  padding-bottom: 0 !important;
+}
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter-VariableFont_slnt,wght.ttf');
@@ -19,7 +22,7 @@ body {
 
 :root {
   --black: #090115;
-  --grey1: #ededed;
+  --grey1: #fcfcfc;
   --grey2: #949494;
   --orange: #dc600e;
   --purple: #e90000;

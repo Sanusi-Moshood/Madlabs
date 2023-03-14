@@ -4,9 +4,10 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger.js';
 import Link from 'next/link';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import hImg from '../public/himg - Copy.jpg';
+import hImg from '../public/three.jpg';
 import wImg from '../public/worthy.jpg';
 import aImg from '../public/himg2.png';
+import rImg from '../public/rmap.jpg';
 
 import { GiShardSword } from 'react-icons/gi';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -16,6 +17,20 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   return (
     <>
+      {/* <section id={styles.team}>
+        <div className='tcont'>
+          <h2 className={styles.thead}>
+            <span>
+              <GiShardSword />
+            </span>
+            {'  '}
+            Team {'  '}
+            <span>
+              <GiShardSword className='shard-sword' />
+            </span>
+          </h2>
+        </div>
+      </section> */}
       <section className={styles.hero}>
         <div className={styles.hcont}>
           <div className={styles.htext}>
@@ -126,20 +141,34 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section id={styles.team}>
-        <div className='tcont'>
-          <h2 className={styles.thead}>
-            <span>
-              <GiShardSword />
-            </span>
-            {'  '}
-            Team {'  '}
-            <span>
-              <GiShardSword className='shard-sword' />
-            </span>
-          </h2>
+      <section className={styles.rmap}>
+        <h2 className={styles.thead}>
+          <span>
+            <GiShardSword />
+          </span>
+          {'  '}
+          Roadmap {'  '}
+          <span>
+            <GiShardSword className='shard-sword' />
+          </span>
+        </h2>
+        <div className={styles.abcont}>
+          <div className={styles.rflex}>
+            <div className={styles.aic}>
+              <Image src={rImg} className={styles.aicimg} />
+            </div>
+            <div className={styles.border}></div>
+            <div className={styles.atext}>
+              <h6> ✨👤🗝️ ROADMAP REVEAL #1</h6>
+              <p className={styles.ap}>
+                A stacked slate for the WORTHY. INCARNA Holders will be able to
+                obtain multiple airdrops on top of the incredible benefits
+                offered! Follow us to learn more!
+              </p>
+            </div>
+          </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 }

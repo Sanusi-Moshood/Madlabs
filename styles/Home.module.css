@@ -1,3 +1,27 @@
+@media only screen and (max-width: 1000px) {
+  .wflex {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .wic {
+    width: 90%;
+    margin: auto;
+  }
+  .wtext {
+    padding: 0;
+    width: 100%;
+  }
+  .wsubt {
+    width: 100%;
+  }
+  .wsub {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .himg {
     width: 100% !important;
@@ -17,7 +41,8 @@
     justify-content: center;
     text-align: center;
   }
-  .aflex {
+  .aflex,
+  .rflex {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -37,6 +62,18 @@
   }
   .aicbutton {
     margin: 0 auto;
+  }
+  .border {
+    position: absolute;
+    top: 0;
+    height: 400px !important;
+  }
+  .rflex {
+    position: relative;
+  }
+  .rflex .atext {
+    margin-left: 50px;
+    width: auto !important;
   }
 }
 
@@ -74,7 +111,7 @@
   max-width: 600px;
 }
 .tblue {
-  background: linear-gradient(112.62deg, #bb0303 29.4%, #aa1f0d 105.15%);
+  background: linear-gradient(112.62deg, #bb0303 29.4%, #dc321c 105.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -189,11 +226,10 @@
 }
 .wsm {
   max-width: 900px;
-  margin: auto;
-  margin-bottom: 30px;
+  margin: 50px auto;
   text-align: center;
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 20px;
+
   font-weight: 500;
 }
 .wsub {
@@ -214,7 +250,7 @@
   font-size: 23px;
 }
 .wsubt h3 span {
-  background: linear-gradient(112.62deg, #bb0303 29.4%, #aa1f0d 105.15%);
+  background: linear-gradient(112.62deg, #bb0303 29.4%, #dc321c 105.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -225,26 +261,42 @@
   font-size: 15px;
 }
 
-@media only screen and (max-width: 1000px) {
-  .wflex {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .wic {
-    width: 90%;
-    margin: auto;
-  }
-  .wtext {
-    padding: 0;
-    width: 100%;
-  }
-  .wsubt {
-    width: 100%;
-  }
-  .wsub {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.rflex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7px;
+}
+
+.rflex h6 {
+  font-size: 20px;
+  text-align: left;
+}
+
+.rflex p {
+  font-size: 16px;
+}
+
+.rflex .atext {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgb(255, 254, 255);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.border {
+  width: 2px;
+  height: 250px;
+  background: linear-gradient(112.62deg, #bb0303 29.4%, #dc321c 105.15%);
+  margin-right: 40px;
+}
+
+.border::after {
+  content: '01';
+  color: #bb0303;
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 10px;
 }
