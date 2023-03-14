@@ -8,29 +8,17 @@ import hImg from '../public/three.jpg';
 import wImg from '../public/worthy.jpg';
 import aImg from '../public/himg2.png';
 import rImg from '../public/rmap.jpg';
+import mImg from '../public/mint.jpg';
 
 import { GiShardSword } from 'react-icons/gi';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef } from 'react';
+import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   return (
     <>
-      {/* <section id={styles.team}>
-        <div className='tcont'>
-          <h2 className={styles.thead}>
-            <span>
-              <GiShardSword />
-            </span>
-            {'  '}
-            Team {'  '}
-            <span>
-              <GiShardSword className='shard-sword' />
-            </span>
-          </h2>
-        </div>
-      </section> */}
       <section className={styles.hero}>
         <div className={styles.hcont}>
           <div className={styles.htext}>
@@ -141,6 +129,46 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section id={styles.worthy}>
+        <div className={styles.container}>
+          <h2 className={styles.thead}>
+            <span></span>
+            Mint Info
+          </h2>
+          <p className={styles.wsm}>
+            To be part of the Overworldplay community you need to be worthy to
+            receive the KEY MINT PASS, you can get this mint pass by supporting
+            the Overworldplay community
+          </p>
+          <div className={styles.mflex}>
+            <div className={styles.mtext}>
+              <div className={styles.wsub}>
+                <div className={styles.wsubt}>
+                  <h3>
+                    <span> Supply</span>
+                  </h3>
+                  <p>To be announced📣</p>
+                </div>
+                <div className={styles.wsubt}>
+                  <h3>
+                    📅 <span>MInt Date</span>
+                  </h3>
+                  <p>To be announced📣</p>
+                </div>
+                <div className={styles.wsubt}>
+                  <h3>
+                    💰 <span>Mint Price</span>
+                  </h3>
+                  <p>To be announced📣</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.wic}>
+              <Image src={mImg} className={styles.wimg} />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className={styles.rmap}>
         <h2 className={styles.thead}>
           <span>
@@ -165,6 +193,153 @@ export default function Home() {
                 obtain multiple airdrops on top of the incredible benefits
                 offered! Follow us to learn more!
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id={styles.team}>
+        <div className={styles.container}>
+          <h2 className={styles.thead}>
+            <span>
+              <GiShardSword />
+            </span>
+            {'  '}
+            Team {'  '}
+            <span>
+              <GiShardSword className='shard-sword' />
+            </span>
+          </h2>
+
+          <div className={styles.tflex}>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/001.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Jeremy Horn</h3>
+                <h5>Founder</h5>
+                <div className={styles.ticn}>
+                  <FaTwitter />
+                  <FaLinkedin />
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/002.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Jeremy Horn</h3>
+                <h5>Founder</h5>
+                <div className={styles.ticn}>
+                  <FaTwitter />
+                  <FaLinkedin />
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/003.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Jeremy Horn</h3>
+                <h5>Founder</h5>
+                <div className={styles.ticn}>
+                  <FaTwitter />
+                  <FaLinkedin />
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/004.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Jeremy Horn</h3>
+                <h5>Founder</h5>
+                <div className={styles.ticn}>
+                  <FaTwitter />
+                  <FaLinkedin />
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/005.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Jeremy Horn</h3>
+                <h5>Founder</h5>
+                <div className={styles.ticn}>
+                  <FaTwitter />
+                  <FaLinkedin />
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/006.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Jeremy Horn</h3>
+                <h5>Founder</h5>
+                <div className={styles.ticn}>
+                  <FaTwitter />
+                  <FaLinkedin />
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/007.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Jeremy Horn</h3>
+                <h5>Founder</h5>
+                <div className={styles.ticn}>
+                  <FaTwitter />
+                  <FaLinkedin />
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/008.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Jeremy Horn</h3>
+                <h5>Founder</h5>
+                <div className={styles.ticn}>
+                  <FaTwitter />
+                  <FaLinkedin />
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/009.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Jeremy Horn</h3>
+                <h5>Founder</h5>
+                <div className={styles.ticn}>
+                  <FaTwitter />
+                  <FaLinkedin />
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/010.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Jeremy Horn</h3>
+                <h5>Founder</h5>
+                <div className={styles.ticn}>
+                  <FaTwitter />
+                  <FaLinkedin />
+                </div>
+              </div>
             </div>
           </div>
         </div>
