@@ -79,15 +79,6 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .htext button {
   background: linear-gradient(112.62deg, #bb0303 29.4%, #dc321c 105.15%);
@@ -131,8 +122,7 @@
   align-items: flex-start;
 }
 
-.aic,
-.wic {
+.aic {
   width: 40%;
   display: block;
 }
@@ -184,6 +174,9 @@
   margin-bottom: 35px;
   text-align: center;
 }
+.wic {
+  width: 60%;
+}
 
 .wimg {
   width: 100%;
@@ -195,4 +188,63 @@
   object-position: top;
 }
 .wsm {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.wsub {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.wsubt {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgb(255, 254, 255);
+  padding: 25px;
+  border-radius: 12px;
+  /* width: 100%; */
+}
+.wsubt {
+  font-size: 23px;
+}
+.wsubt h3 span {
+  background: linear-gradient(112.62deg, #bb0303 29.4%, #aa1f0d 105.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.wsubt p {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .wflex {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .wic {
+    width: 90%;
+    margin: auto;
+  }
+  .wtext {
+    padding: 0;
+    width: 100%;
+  }
+  .wsubt {
+    width: 100%;
+  }
+  .wsub {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

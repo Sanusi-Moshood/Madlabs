@@ -78,49 +78,49 @@ export default function Home() {
             <span>🥇</span>
             Become Worthy 🥇
           </h2>
-
+          <p className={styles.wsm}>
+            Looking to be deemed WORTHY to get your Mint Pass NFT? 🗝️✨ Use
+            hashtag #BeWorthy and show us just how WORTHY you are. ❤️ 💬 🔁
+          </p>
           <div className={styles.wflex}>
             <div className={styles.wic}>
               <Image src={wImg} className={styles.wimg} />
             </div>
-            <div className={styles.wtext}>
-              <span className={styles.wsm}>
-                Looking to be deemed WORTHY to get your Mint Pass NFT? 🗝️✨ Use
-                hashtag #BeWorthy and show us just how WORTHY you are. ❤️ 💬 🔁
-              </span>
-              <div>
-                <h3>🔮Unrivaled Creativity </h3>
-                <p>
-                  Creativity can come in many shapes and sizes! 🎨🖊️ Lore, art,
-                  creations, or original memes... Use your imagination and
-                  creativity to share your vision of Overworld! If you use AI,
-                  say it :) The WORTHY are honest and authentic!
-                </p>
-              </div>
-              <div>
-                <h3>🎉Vibrant Participation </h3>
-                <p>
-                  There is no Overworld without community! The WORTHY are the
-                  ones who show up and make their presence known and bring new
-                  followers into the community! Comment, retweet, like, and
-                  participate consistently! Raid tweets and spread the word!📣
-                </p>
-              </div>
-              <div>
-                <h3>💡Profound Wisdom</h3>
-                <p>
-                  We love great ideas, and we love hearing new ones we have yet
-                  to consider.🧠 Share your wisdom and insights in posts and
-                  threads to help us grow together.
-                </p>
-              </div>
 
-              <div>
-                <p>
-                  We'll be checking back often to give away a massive amount of
-                  FREE Mint Pass NFTs in the upcoming weeks.🗝️✨ Now is your
-                  time! The stage has been set! The Overworld awaits!
-                </p>
+            <div className={styles.wtext}>
+              <div className={styles.wsub}>
+                <div className={styles.wsubt}>
+                  <h3>
+                    🔮 <span>Unrivaled Creativity</span>
+                  </h3>
+                  <p>
+                    Creativity can come in many shapes and sizes! 🎨🖊️ Lore,
+                    art, creations, or original memes... Use your imagination
+                    and creativity to share your vision of Overworld! If you use
+                    AI, say it :) The WORTHY are honest and authentic!
+                  </p>
+                </div>
+                <div className={styles.wsubt}>
+                  <h3>
+                    🎉 <span>Vibrant Participation</span>
+                  </h3>
+                  <p>
+                    There is no Overworld without community! The WORTHY are the
+                    ones who show up and make their presence known and bring new
+                    followers into the community! Comment, retweet, like, and
+                    participate consistently! Raid tweets and spread the word!📣
+                  </p>
+                </div>
+                <div className={styles.wsubt}>
+                  <h3>
+                    💡 <span>Profound Wisdom</span>
+                  </h3>
+                  <p>
+                    We love great ideas, and we love hearing new ones we have
+                    yet to consider.🧠 Share your wisdom and insights in posts
+                    and threads to help us grow together.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
