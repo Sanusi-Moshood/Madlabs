@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: var(--grey1);
+  background-color: #ddf1fc;
   color: var(--black);
   font-family: 'Inter', sans-serif;
 }

@@ -3,7 +3,7 @@
   position: fixed;
   z-index: 99;
   border-bottom: 0.01px solid #ffb4b4;
-  background-color: var(--grey1);
+  background-color: #ddf1fc;
   /* background-blend-mode: difference; */
 }
 .nav {
