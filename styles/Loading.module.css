@@ -39,9 +39,15 @@
 .centre {
   margin-top: 40px;
   position: relative;
-
   width: 4rem;
   height: 4rem;
+  margin-left: -20x;
+}
+@media only screen and (max-width: 500px) {
+  .centre {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 .img {

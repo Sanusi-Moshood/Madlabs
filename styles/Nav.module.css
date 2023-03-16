@@ -55,7 +55,11 @@
   .nico button {
     display: none;
   }
+  .cnw {
+    display: block !important;
+  }
 }
+
 .link {
   text-decoration: none;
   color: var(--black);
@@ -115,4 +119,7 @@
     background-clip: text;
     text-fill-color: transparent;
   }
+}
+.cnw {
+  display: none;
 }

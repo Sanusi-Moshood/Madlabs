@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import styles from '../styles/Nav.module.css';
 import Image from 'next/image';
-import { FaDiscord, FaTwitter } from 'react-icons/fa';
+import { FaDiscord, FaTwitter, FaWallet } from 'react-icons/fa';
 import SiOpensea from 'react-icons';
 import { AiOutlineTwitter } from 'react-icons/ai';
 
@@ -15,6 +15,12 @@ export default function Navbar() {
 
   const navToggle = (event) => {
     setOpen((prev) => !prev);
+  };
+
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    const element = document.querySelector(id);
+    element.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -34,37 +40,43 @@ export default function Navbar() {
             }`}
           >
             <Link
-              onClick={navToggle}
-              href={'/'}
+              onClick={(e) => {
+                handleScroll(e, '#hero');
+              }}
+              href={'#'}
               className={`${styles.link} ${
                 pathname === '/' ? styles.active : ''
               }`}
             >
-              {' '}
               Home
             </Link>
             <Link
-              onClick={navToggle}
-              href={'/about'}
+              onClick={(e) => {
+                handleScroll(e, '#about');
+              }}
+              href={'#about'}
               className={`${styles.link} ${
                 pathname === '/about' ? styles.active : ''
               }`}
             >
-              {' '}
               About
             </Link>
             <Link
-              onClick={navToggle}
-              href={'/service'}
+              onClick={(e) => {
+                handleScroll(e, '#mint');
+              }}
+              href={'#mint'}
               className={`${styles.link} ${
-                pathname === '/service' ? styles.active : ''
+                pathname === '/gallery' ? styles.active : ''
               }`}
             >
-              Team
+              Mint info
             </Link>
             <Link
-              onClick={navToggle}
-              href={'/service'}
+              onClick={(e) => {
+                handleScroll(e, '#roadmap');
+              }}
+              href={'#roadmap'}
               className={`${styles.link} ${
                 pathname === '/service' ? styles.active : ''
               }`}
@@ -72,18 +84,21 @@ export default function Navbar() {
               Roadmap
             </Link>
             <Link
-              onClick={navToggle}
-              href={'/gallery'}
+              onClick={(e) => {
+                handleScroll(e, '#team');
+              }}
+              href={'#team'}
               className={`${styles.link} ${
-                pathname === '/gallery' ? styles.active : ''
+                pathname === '/service' ? styles.active : ''
               }`}
             >
-              Mint info
+              Team
             </Link>
           </div>
           <div className={styles.nico}>
             <FaTwitter className={styles.ico} />
             <button>Connect wallet</button>
+            <FaWallet className={`${styles.ico} ${styles.cnw}`} />
           </div>
           <div
             className={`${styles.menu} ${open ? styles.menuactive : ''}`}

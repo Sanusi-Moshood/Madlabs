@@ -13,7 +13,7 @@ const faqData = [
   },
   {
     id: 2,
-    question: 'What and when is the first Mint?',
+    question: 'When is the first Mint?',
     answer:
       "Our first mint scheduled for Q2 is a PFP for the bold and the brave who crave a life beyond the mundane. The Worthy are the ones who dare answer the hero's (or villain's) call, pick up the sword, unleash their power, and step into their destiny.",
   },

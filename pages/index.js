@@ -20,13 +20,18 @@ import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    const element = document.querySelector(id);
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <>
       <div className='bg-overlay'>
         <div className='oc1'></div>
         <div className='oc2'></div>
       </div>
-      <section className={styles.hero}>
+      <section className={styles.hero} id='hero'>
         <div className={styles.hcont}>
           <div className={styles.htext}>
             <h1>
@@ -39,7 +44,11 @@ export default function Home() {
               with Overworld
             </span>
             <div>
-              <button>
+              <button
+                onClick={(e) => {
+                  handleScroll(e, '#worthy');
+                }}
+              >
                 Become Worthy <HiArrowNarrowRight />
               </button>
             </div>
@@ -50,7 +59,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id={styles.about}>
+      <section id={'about'}>
         <div className={styles.abcont}>
           <div className={styles.aflex}>
             <div className={styles.aic}>
@@ -82,7 +91,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id={styles.worthy}>
+      <section id={'worthy'}>
         <div className={styles.container}>
           <h2 className={styles.thead}>
             <span>🥇</span>
@@ -136,7 +145,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id={styles.worthy}>
+      <section id={'mint'}>
         <div className={styles.container}>
           <h2 className={styles.thead}>
             <span></span>
@@ -180,7 +189,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.rmap}>
+      <section className={styles.rmap} id='roadmap'>
         <h2 className={styles.thead}>
           <span>
             <GiShardSword />
@@ -264,7 +273,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id={styles.team}>
+      <section id={'team'}>
         <div className={styles.container}>
           <h2 className={styles.thead}>
             <span>
@@ -464,7 +473,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section id={styles.about}>
+      <section id={'faq'}>
         <div className={styles.abcont}>
           <div className={styles.aflex}>
             <div className={styles.ftext}>

@@ -9,7 +9,7 @@ const Loading = () => {
     var tl = gsap.timeline();
     let mm = gsap.matchMedia();
 
-    mm.add('(max-width: 380px', () => {
+    mm.add('(max-width: 500px', () => {
       tl.to('#centre', {
         delay: 2.5,
         width: '4rem',
@@ -105,7 +105,7 @@ const Loading = () => {
         <div className={styles.centre} id={'centre'}>
           <div className={styles.imgCont}>
             <div className={` ${styles.img1} ${styles.img}`} id={'img1'}>
-              <Image src={'/three.jfif'} fill objectFit='cover' />
+              <Image src={'/key.pngs'} fill objectFit='cover' />
             </div>
             <div className={`${styles.img2} ${styles.img}`} id={'img2'}>
               <Image src={'/two.jfif'} fill objectFit='cover' />
