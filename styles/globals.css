@@ -19,8 +19,7 @@ h5,
 h6 {
   font-family: 'Acme';
 }
-.bg-overlay,
-.nv-overlay {
+.bg-overlay {
   width: 100vw;
   position: fixed;
   height: 150vh;
@@ -34,8 +33,9 @@ h6 {
   -o-mix-blend-mode: color; /* Opera */
   background: linear-gradient(157.64deg, #f950ff 52.95%, #744dff 92.06%);
 }
-.nv-overlay {
-  height: 60px;
+#nav {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
 }
 @media only screen and (max-width: 700px) {
   .nv-overlay {

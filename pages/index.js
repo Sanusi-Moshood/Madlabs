@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import hImg from '../public/himggg.png';
 import wImg from '../public/worthy.png';
+import iwImg from '../public/footer.png';
 import aImg from '../public/himg2.png';
 import rImg from '../public/rmap.png';
 import mImg from '../public/mint.png';
@@ -468,8 +469,12 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.pflex}>
           <Image width={'300'} height='60' src={'/Group 42991.svg'} />
+
+          <Image width={'103'} height='100' src={'/alpha.png'} />
           <Image width={'58'} height='60' src={'/Vector.svg'} />
+          <Image width={'103'} height='100' src={'/ape.jpg'} />
           <Image width={'103'} height='60' src={'/Vector-1.svg'} />
+          <Image width={'103'} height='100' src={'/aperion.png'} />
         </div>
       </div>
 
@@ -503,14 +508,91 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className={styles.footer}>
-          <Image
-            src={'/footer.png'}
-            fill
-            objectFit='cover'
-            objectPosition='center'
-          />
+
+      <section id={'worthy'}>
+        <div className={styles.container}>
+          <h2 className={styles.thead}>
+            <span>🥇</span>I am Worthy 🥇
+          </h2>
+          <p className={styles.wsm}>
+            This is all I’ve done so far since before #BeWorthy till now 🥹 and I
+            still have more coming 💯🚀🚀🚀❤️‍🩹
+          </p>
+          <div className={styles.wflex}>
+            <div className={styles.wic}>
+              <Image src={iwImg} className={styles.wimg} />
+            </div>
+
+            <div className={styles.wtext}>
+              <div className={styles.wsub}>
+                <div className={styles.wsubt}>
+                  <h3>
+                    <span>A Collection of Memes I made for Overworld </span>😂
+                  </h3>
+                  <p>
+                    <Link
+                      href={
+                        'https://twitter.com/yfn_doc/status/1634608658821664772?s=46&t=F4XOV4QI0XDFuhqDHAa_8Q'
+                      }
+                      target='_blank'
+                    >
+                      <FaTwitter /> View thread
+                    </Link>
+                  </p>
+                </div>
+
+                <div className={styles.wsubt}>
+                  <h3>
+                    <span>
+                      A thread of feature i look forward to seeing in overworld{' '}
+                    </span>
+                    🎮
+                  </h3>
+                  <p>
+                    <Link
+                      href={
+                        'https://twitter.com/yfn_doc/status/1634006862931677186?s=46&t=F4XOV4QI0XDFuhqDHAa_8Q'
+                      }
+                      target='_blank'
+                    >
+                      <FaTwitter /> View thread
+                    </Link>
+                  </p>
+                </div>
+                <div className={styles.wsubt}>
+                  <h3>
+                    <span>I used overworld frame as my pfp</span>🖼
+                  </h3>
+                  <p>
+                    <Link
+                      href={
+                        'https://twitter.com/yfn_doc/status/1633632142990139392?s=46&t=F4XOV4QI0XDFuhqDHAa_8Q'
+                      }
+                      target='_blank'
+                    >
+                      <FaTwitter /> View tweet
+                    </Link>
+                  </p>
+                </div>
+                <div className={styles.wsubt}>
+                  <h3>
+                    <span>I made more memes for Overworld </span>😂
+                  </h3>
+                  <p>
+                    {' '}
+                    <Link
+                      href={
+                        'https://twitter.com/yfn_doc/status/1635753058771652612?s=46&t=F4XOV4QI0XDFuhqDHAa_8Q'
+                      }
+                      target='_blank'
+                    >
+                      <FaTwitter /> View thread
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

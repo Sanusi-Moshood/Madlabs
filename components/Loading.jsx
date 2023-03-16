@@ -9,27 +9,16 @@ const Loading = () => {
     var tl = gsap.timeline();
     let mm = gsap.matchMedia();
 
-    mm.add('(max-width: 700px', () => {
+    mm.add('(max-width: 380px', () => {
       tl.to('#centre', {
         delay: 2.5,
         width: '4rem',
         duration: 1,
       })
-        .to(
-          '#xy',
-          {
-            // position: 'absolute',
-            opacity: '1',
-            bottom: '10px',
-            left: '30px',
-            duration: 0.5,
-          },
-          '<1'
-        )
         .to('#centre', {
           duration: 1,
-          width: '300px',
-          height: '300px',
+          width: '180px',
+          height: '280px',
         })
         .to('#img3', {
           height: 0,
@@ -58,21 +47,10 @@ const Loading = () => {
       width: '4rem',
       duration: 1,
     })
-      .to(
-        '#xy',
-        {
-          // position: 'absolute',
-          opacity: '1',
-          bottom: '10px',
-          left: '30px',
-          duration: 0.5,
-        },
-        '<1'
-      )
       .to('#centre', {
         duration: 1,
-        width: '450px',
-        height: '600px',
+        width: '300px',
+        height: '400px',
       })
       .to('#img3', {
         height: 0,
@@ -95,6 +73,96 @@ const Loading = () => {
         duration: 0.5,
       });
   }, []);
+  // useEffect(() => {
+  //   var tl = gsap.timeline();
+  //   let mm = gsap.matchMedia();
+
+  //   mm.add('(max-width: 700px', () => {
+  //     tl.to('#centre', {
+  //       delay: 2.5,
+  //       width: '4rem',
+  //       duration: 1,
+  //     })
+  //       .to(
+  //         '#xy',
+  //         {
+  //           // position: 'absolute',
+  //           opacity: '1',
+  //           bottom: '10px',
+  //           left: '30px',
+  //           duration: 0.5,
+  //         },
+  //         '<1'
+  //       )
+  //       .to('#centre', {
+  //         duration: 1,
+  //         width: '300px',
+  //         height: '300px',
+  //       })
+  //       .to('#img3', {
+  //         height: 0,
+  //         duration: 1.5,
+  //       })
+  //       .to('#img2', {
+  //         height: 0,
+  //         duration: 1.5,
+  //       })
+  //       .to('#centre', {
+  //         height: 0,
+  //         width: 0,
+  //         duration: 1,
+  //       })
+  //       .to('#xy', {
+  //         opacity: '0',
+  //       })
+  //       .to('#coverer', {
+  //         height: 0,
+  //         duration: 0.5,
+  //       });
+  //   });
+
+  //   tl.to('#centre', {
+  //     delay: 3,
+  //     width: '4rem',
+  //     duration: 1,
+  //   })
+  //     .to(
+  //       '#xy',
+  //       {
+  //         // position: 'absolute',
+  //         opacity: '1',
+  //         bottom: '10px',
+  //         left: '30px',
+  //         duration: 0.5,
+  //       },
+  //       '<1'
+  //     )
+  //     .to('#centre', {
+  //       duration: 1,
+  //       width: '450px',
+  //       height: '600px',
+  //     })
+  //     .to('#img3', {
+  //       height: 0,
+  //       duration: 1.5,
+  //     })
+  //     .to('#img2', {
+  //       height: 0,
+  //       duration: 1.5,
+  //     })
+  //     .to('#centre', {
+  //       height: 0,
+  //       width: 0,
+  //       duration: 1,
+  //     })
+  //     .to('#xy', {
+  //       opacity: '0',
+  //     })
+  //     .to('#coverer', {
+  //       height: 0,
+  //       duration: 0.5,
+  //     });
+  // }, []);
 
   return (
     <div className={styles.container} id={'coverer'}>

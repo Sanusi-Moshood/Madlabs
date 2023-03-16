@@ -25,7 +25,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='nav'>
       <div className='nv-overlay'>
         <div className='oc1'></div>
         <div className='oc2'></div>
@@ -97,7 +97,7 @@ export default function Navbar() {
             </Link>
           </div>
           <div className={styles.nico}>
-            <Link href={'#'}>
+            <Link href={'https://twitter.com/OverworldPlay'} target='blank'>
               <FaTwitter className={styles.ico} />
             </Link>
 
