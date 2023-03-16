@@ -4,12 +4,15 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger.js';
 import Link from 'next/link';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import hImg from '../public/three.jpg';
-import wImg from '../public/worthy.jpg';
+import hImg from '../public/himggg.png';
+import wImg from '../public/worthy.png';
 import aImg from '../public/himg2.png';
-import rImg from '../public/rmap.jpg';
-import mImg from '../public/mint.jpg';
-
+import rImg from '../public/rmap.png';
+import mImg from '../public/mint.png';
+import dImg from '../public/disc.png';
+import hhImg from '../public/Group 42992.png';
+import faqData from '../components/faqData';
+import FaqItem from '../components/FaqItem';
 import { GiShardSword } from 'react-icons/gi';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef } from 'react';
@@ -19,6 +22,10 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   return (
     <>
+      <div className='bg-overlay'>
+        <div className='oc1'></div>
+        <div className='oc2'></div>
+      </div>
       <section className={styles.hero}>
         <div className={styles.hcont}>
           <div className={styles.htext}>
@@ -38,7 +45,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.himg}>
-            <Image src={hImg} className={styles.himgimg} />
+            <Image src={hhImg} className={styles.himgimg} />
           </div>
         </div>
       </section>
@@ -141,21 +148,25 @@ export default function Home() {
             the Overworldplay community
           </p>
           <div className={styles.mflex}>
-            <div className={styles.mtext}>
-              <div className={styles.wsub}>
-                <div className={styles.wsubt}>
+            <div className={styles.msub}>
+              <div className={styles.msubt}>
+                <div>
                   <h3>
                     <span> Supply</span>
                   </h3>
                   <p>To be announced📣</p>
                 </div>
-                <div className={styles.wsubt}>
+              </div>
+              <div className={styles.msubt}>
+                <div>
                   <h3>
                     📅 <span>MInt Date</span>
                   </h3>
                   <p>To be announced📣</p>
                 </div>
-                <div className={styles.wsubt}>
+              </div>
+              <div className={styles.msubt}>
+                <div>
                   <h3>
                     💰 <span>Mint Price</span>
                   </h3>
@@ -195,8 +206,64 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <div className={styles.rflex}>
+            <div className={styles.ric}>
+              <Image src={dImg} className={styles.aicimg} />
+            </div>
+            <div className={styles.border2}></div>
+            <div className={styles.atext}>
+              <h6> Discord Coming Soon 🎉💬 #2</h6>
+              <p className={styles.ap}>
+                A stacked slate for the WORTHY. INCARNA Holders will be able to
+                obtain multiple airdrops on top of the incredible benefits
+                offered! Follow us to learn more!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+      <section>
+        <div className={styles.container}>
+          <h2 className={styles.thead}>Latest drops 🔥</h2>
+
+          <div className={styles.tflex}>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/three.png'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>#Overworld</h3>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/himg2.png'} fill objectFit='contain' />
+              </div>
+              <div className={styles.ttext}>
+                <h3>#Overworld</h3>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/key.png'} fill objectFit='contain' />
+              </div>
+              <div className={styles.ttext}>
+                <h3>#Overworld</h3>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/himgg.png'} fill objectFit='contain' />
+              </div>
+              <div className={styles.ttext}>
+                <h3>#Overworld</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id={styles.team}>
         <div className={styles.container}>
           <h2 className={styles.thead}>
@@ -219,34 +286,15 @@ export default function Home() {
                 <h3>Jeremy Horn</h3>
                 <h5>Founder</h5>
                 <div className={styles.ticn}>
-                  <FaTwitter />
-                  <FaLinkedin />
-                </div>
-              </div>
-            </div>
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/002.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>Jeremy Horn</h3>
-                <h5>Founder</h5>
-                <div className={styles.ticn}>
-                  <FaTwitter />
-                  <FaLinkedin />
-                </div>
-              </div>
-            </div>
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/003.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>Jeremy Horn</h3>
-                <h5>Founder</h5>
-                <div className={styles.ticn}>
-                  <FaTwitter />
-                  <FaLinkedin />
+                  <Link
+                    href={'https://twitter.com/HeyJeremyHorn'}
+                    about='blank'
+                  >
+                    <FaTwitter />
+                  </Link>
+                  <Link href={'https://t.co/NptP1My9sI'} about='blank'>
+                    <FaLinkedin />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -255,11 +303,32 @@ export default function Home() {
                 <Image src={'/004.jpeg'} fill />
               </div>
               <div className={styles.ttext}>
-                <h3>Jeremy Horn</h3>
-                <h5>Founder</h5>
+                <h3>John Haris</h3>
+                <h5>Vp of Tech</h5>
                 <div className={styles.ticn}>
-                  <FaTwitter />
-                  <FaLinkedin />
+                  <Link href={'#'}>
+                    <FaTwitter />
+                  </Link>
+                  <Link href={'https://t.co/iP0XoB5LAc'} about='blank'>
+                    <FaLinkedin />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/002.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>James Hall</h3>
+                <h5>Creative Director</h5>
+                <div className={styles.ticn}>
+                  <Link href={'https://twitter.com/The_Arkrael'} about='blank'>
+                    <FaTwitter />
+                  </Link>
+                  <Link href={'https://t.co/iMpYz0h5OF'} about='blank'>
+                    <FaLinkedin />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -268,11 +337,15 @@ export default function Home() {
                 <Image src={'/005.jpeg'} fill />
               </div>
               <div className={styles.ttext}>
-                <h3>Jeremy Horn</h3>
-                <h5>Founder</h5>
+                <h3>Tom Tang</h3>
+                <h5>Director Of design</h5>
                 <div className={styles.ticn}>
-                  <FaTwitter />
-                  <FaLinkedin />
+                  <Link href={'#'}>
+                    <FaTwitter />
+                  </Link>
+                  <Link href={'https://t.co/KiJDMQGZ2k'} about='blank'>
+                    <FaLinkedin />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -281,11 +354,15 @@ export default function Home() {
                 <Image src={'/006.jpeg'} fill />
               </div>
               <div className={styles.ttext}>
-                <h3>Jeremy Horn</h3>
-                <h5>Founder</h5>
+                <h3>Stojan Madjunkov</h3>
+                <h5>Director of Product</h5>
                 <div className={styles.ticn}>
-                  <FaTwitter />
-                  <FaLinkedin />
+                  <Link href={'#'}>
+                    <FaTwitter />
+                  </Link>
+                  <Link href={'https://t.co/D1BzujdvxV'}>
+                    <FaLinkedin />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -294,37 +371,51 @@ export default function Home() {
                 <Image src={'/007.jpeg'} fill />
               </div>
               <div className={styles.ttext}>
-                <h3>Jeremy Horn</h3>
-                <h5>Founder</h5>
+                <h3>Yitao Guan</h3>
+                <h5>Advisor</h5>
                 <div className={styles.ticn}>
-                  <FaTwitter />
-                  <FaLinkedin />
+                  <Link href={'#'}>
+                    <FaTwitter />
+                  </Link>
+                  <Link href={'https://t.co/TxL1SPFLAi'} about='blank'>
+                    <FaLinkedin />
+                  </Link>
                 </div>
               </div>
             </div>
+
             <div className={styles.tcont}>
               <div className={styles.timg}>
                 <Image src={'/008.jpeg'} fill />
               </div>
               <div className={styles.ttext}>
-                <h3>Jeremy Horn</h3>
-                <h5>Founder</h5>
+                <h3>Brian Wilson</h3>
+                <h5>Associate Art Director</h5>
                 <div className={styles.ticn}>
-                  <FaTwitter />
-                  <FaLinkedin />
+                  <Link href={'#'}>
+                    <FaTwitter />
+                  </Link>
+                  <Link href={'https://t.co/5HSM3DjDQC'} about='blank'>
+                    <FaLinkedin />
+                  </Link>
                 </div>
               </div>
             </div>
+
             <div className={styles.tcont}>
               <div className={styles.timg}>
                 <Image src={'/009.jpeg'} fill />
               </div>
               <div className={styles.ttext}>
-                <h3>Jeremy Horn</h3>
-                <h5>Founder</h5>
+                <h3>Anthony Ulrich</h3>
+                <h5>Lead Gameplay Engineer</h5>
                 <div className={styles.ticn}>
-                  <FaTwitter />
-                  <FaLinkedin />
+                  <Link href={'#'}>
+                    <FaTwitter />
+                  </Link>
+                  <Link href={'https://t.co/W5oCVh5Vh0'} about='blank'>
+                    <FaLinkedin />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -333,15 +424,84 @@ export default function Home() {
                 <Image src={'/010.jpeg'} fill />
               </div>
               <div className={styles.ttext}>
-                <h3>Jeremy Horn</h3>
-                <h5>Founder</h5>
+                <h3>Micheal Maurino</h3>
+                <h5>Lead Concept Artist</h5>
                 <div className={styles.ticn}>
-                  <FaTwitter />
-                  <FaLinkedin />
+                  <Link href={'#'}>
+                    <FaTwitter />
+                  </Link>
+                  <Link href={'https://t.co/SujoAHh0pt'} about='blank'>
+                    <FaLinkedin />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/003.jpeg'} fill />
+              </div>
+              <div className={styles.ttext}>
+                <h3>Darren Lue</h3>
+                <h5>Community Manager</h5>
+                <div className={styles.ticn}>
+                  <Link href={'https://twitter.com/blind_gg'} about='blank'>
+                    <FaTwitter />
+                  </Link>
+                  <Link href={'https://t.co/46NFU3RtaA'} about='blank'>
+                    <FaLinkedin />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <div className={styles.container}>
+        <div className={styles.pflex}>
+          <Image width={'300'} height='60' src={'/Group 42991.svg'} />
+          <Image width={'58'} height='60' src={'/Vector.svg'} />
+          <Image width={'103'} height='60' src={'/Vector-1.svg'} />
+        </div>
+      </div>
+
+      <section id={styles.about}>
+        <div className={styles.abcont}>
+          <div className={styles.aflex}>
+            <div className={styles.ftext}>
+              <h2 className={styles.ahead}>
+                <span>
+                  <GiShardSword />
+                </span>
+                FAQ
+                <span>
+                  <GiShardSword className='shard-sword' />
+                </span>
+              </h2>
+              <div className={styles.ff}>
+                {faqData.map((item) => (
+                  <FaqItem
+                    key={item.id}
+                    id={item.id}
+                    question={item.question}
+                    answer={item.answer}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className={styles.aic}>
+              <Image src={hImg} className={styles.aicimg} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className={styles.footer}>
+          <Image
+            src={'/footer.png'}
+            fill
+            objectFit='cover'
+            objectPosition='center'
+          />
         </div>
       </section>
     </>

@@ -2,8 +2,8 @@
   width: 100%;
   position: fixed;
   z-index: 99;
-  border-bottom: 0.01px solid #ffb4b4;
-  background-color: #ddf1fc;
+  border-bottom: 0.01px solid #744dff;
+  background-color: #a1deff;
   /* background-blend-mode: difference; */
 }
 .nav {
@@ -39,8 +39,8 @@
   font-size: 30px;
 }
 .nico button {
-  background: linear-gradient(112.62deg, #bb0303 29.4%, #dc321c 105.15%);
-  border-radius: 20px;
+  background: linear-gradient(112.62deg, #2422ac 29.4%, #4b154e 105.15%);
+  /* border-radius: 20px; */
   padding: 10px 25px;
   font-weight: 600;
   font-size: 20px;
@@ -109,7 +109,7 @@
     color: var(--grey1);
   }
   .active {
-    background: linear-gradient(112.62deg, #bb0303 29.4%, #aa1f0d 105.15%);
+    background: linear-gradient(112.62deg, #2422ac 29.4%, #4b154e 105.15%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

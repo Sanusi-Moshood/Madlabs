@@ -19,6 +19,10 @@ export default function Navbar() {
 
   return (
     <div className={styles.container}>
+      <div className='nv-overlay'>
+        <div className='oc1'></div>
+        <div className='oc2'></div>
+      </div>
       <nav className={styles.nav}>
         <div className={styles.logo}>
           <Image src={'/logb.svg'} id={'intlog'} fill />
@@ -78,7 +82,6 @@ export default function Navbar() {
             </Link>
           </div>
           <div className={styles.nico}>
-            <FaDiscord className={styles.ico} />
             <FaTwitter className={styles.ico} />
             <button>Connect wallet</button>
           </div>
