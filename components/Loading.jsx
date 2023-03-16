@@ -28,8 +28,8 @@ const Loading = () => {
         )
         .to('#centre', {
           duration: 1,
-          width: '180px',
-          height: '280px',
+          width: '100px',
+          height: '200px',
         })
         .to('#img3', {
           height: 0,
@@ -105,7 +105,7 @@ const Loading = () => {
         <div className={styles.centre} id={'centre'}>
           <div className={styles.imgCont}>
             <div className={` ${styles.img1} ${styles.img}`} id={'img1'}>
-              <Image src={'/key.pngs'} fill objectFit='cover' />
+              <Image src={'/key.png'} fill objectFit='cover' />
             </div>
             <div className={`${styles.img2} ${styles.img}`} id={'img2'}>
               <Image src={'/two.jfif'} fill objectFit='cover' />

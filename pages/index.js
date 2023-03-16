@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.himg}>
-            <Image src={hhImg} className={styles.himgimg} />
+            <Image src={hhImg} className={styles.himgimg} priority />
           </div>
         </div>
       </section>

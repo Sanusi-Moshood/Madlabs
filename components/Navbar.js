@@ -21,6 +21,7 @@ export default function Navbar() {
     e.preventDefault();
     const element = document.querySelector(id);
     element.scrollIntoView({ behavior: 'smooth' });
+    navToggle();
   };
 
   return (

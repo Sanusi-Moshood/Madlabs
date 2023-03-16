@@ -412,6 +412,7 @@
 }
 .ticn {
   display: flex;
+  height: max-content;
   gap: 20px;
   align-items: center;
   justify-content: center;
