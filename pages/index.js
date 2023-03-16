@@ -10,7 +10,7 @@ import aImg from '../public/himg2.png';
 import rImg from '../public/rmap.png';
 import mImg from '../public/mint.png';
 import dImg from '../public/disc.png';
-import hhImg from '../public/Group 42992.png';
+import hhImg from '../public/homei.png';
 import faqData from '../components/faqData';
 import FaqItem from '../components/FaqItem';
 import { GiShardSword } from 'react-icons/gi';
