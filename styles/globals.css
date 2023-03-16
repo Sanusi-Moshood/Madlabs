@@ -29,6 +29,9 @@ h6 {
   left: 0;
   right: 0;
   mix-blend-mode: color;
+  -webkit-mix-blend-mode: color;
+  -moz-mix-blend-mode: color; /* Firefox */
+  -o-mix-blend-mode: color; /* Opera */
   background: linear-gradient(157.64deg, #f950ff 52.95%, #744dff 92.06%);
 }
 .nv-overlay {

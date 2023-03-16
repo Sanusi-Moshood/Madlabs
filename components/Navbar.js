@@ -19,9 +19,9 @@ export default function Navbar() {
 
   const handleScroll = (e, id) => {
     e.preventDefault();
+    navToggle();
     const element = document.querySelector(id);
     element.scrollIntoView({ behavior: 'smooth' });
-    navToggle();
   };
 
   return (
@@ -97,7 +97,10 @@ export default function Navbar() {
             </Link>
           </div>
           <div className={styles.nico}>
-            <FaTwitter className={styles.ico} />
+            <Link href={'#'}>
+              <FaTwitter className={styles.ico} />
+            </Link>
+
             <button>Connect wallet</button>
             <FaWallet className={`${styles.ico} ${styles.cnw}`} />
           </div>

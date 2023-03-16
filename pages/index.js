@@ -297,11 +297,11 @@ export default function Home() {
                 <div className={styles.ticn}>
                   <Link
                     href={'https://twitter.com/HeyJeremyHorn'}
-                    about='blank'
+                    target='blank'
                   >
                     <FaTwitter />
                   </Link>
-                  <Link href={'https://t.co/NptP1My9sI'} about='blank'>
+                  <Link href={'https://t.co/NptP1My9sI'} target='blank'>
                     <FaLinkedin />
                   </Link>
                 </div>
@@ -318,7 +318,7 @@ export default function Home() {
                   <Link href={'#'}>
                     <FaTwitter />
                   </Link>
-                  <Link href={'https://t.co/iP0XoB5LAc'} about='blank'>
+                  <Link href={'https://t.co/iP0XoB5LAc'} target='blank'>
                     <FaLinkedin />
                   </Link>
                 </div>
@@ -332,10 +332,10 @@ export default function Home() {
                 <h3>James Hall</h3>
                 <h5>Creative Director</h5>
                 <div className={styles.ticn}>
-                  <Link href={'https://twitter.com/The_Arkrael'} about='blank'>
+                  <Link href={'https://twitter.com/The_Arkrael'} target='blank'>
                     <FaTwitter />
                   </Link>
-                  <Link href={'https://t.co/iMpYz0h5OF'} about='blank'>
+                  <Link href={'https://t.co/iMpYz0h5OF'} target='blank'>
                     <FaLinkedin />
                   </Link>
                 </div>
@@ -352,7 +352,7 @@ export default function Home() {
                   <Link href={'#'}>
                     <FaTwitter />
                   </Link>
-                  <Link href={'https://t.co/KiJDMQGZ2k'} about='blank'>
+                  <Link href={'https://t.co/KiJDMQGZ2k'} target='blank'>
                     <FaLinkedin />
                   </Link>
                 </div>
@@ -386,7 +386,7 @@ export default function Home() {
                   <Link href={'#'}>
                     <FaTwitter />
                   </Link>
-                  <Link href={'https://t.co/TxL1SPFLAi'} about='blank'>
+                  <Link href={'https://t.co/TxL1SPFLAi'} target='blank'>
                     <FaLinkedin />
                   </Link>
                 </div>
@@ -404,7 +404,7 @@ export default function Home() {
                   <Link href={'#'}>
                     <FaTwitter />
                   </Link>
-                  <Link href={'https://t.co/5HSM3DjDQC'} about='blank'>
+                  <Link href={'https://t.co/5HSM3DjDQC'} target='blank'>
                     <FaLinkedin />
                   </Link>
                 </div>
@@ -422,7 +422,7 @@ export default function Home() {
                   <Link href={'#'}>
                     <FaTwitter />
                   </Link>
-                  <Link href={'https://t.co/W5oCVh5Vh0'} about='blank'>
+                  <Link href={'https://t.co/W5oCVh5Vh0'} target='blank'>
                     <FaLinkedin />
                   </Link>
                 </div>
@@ -439,7 +439,7 @@ export default function Home() {
                   <Link href={'#'}>
                     <FaTwitter />
                   </Link>
-                  <Link href={'https://t.co/SujoAHh0pt'} about='blank'>
+                  <Link href={'https://t.co/SujoAHh0pt'} target='blank'>
                     <FaLinkedin />
                   </Link>
                 </div>
@@ -453,10 +453,10 @@ export default function Home() {
                 <h3>Darren Lue</h3>
                 <h5>Community Manager</h5>
                 <div className={styles.ticn}>
-                  <Link href={'https://twitter.com/blind_gg'} about='blank'>
+                  <Link href={'https://twitter.com/blind_gg'} target='blank'>
                     <FaTwitter />
                   </Link>
-                  <Link href={'https://t.co/46NFU3RtaA'} about='blank'>
+                  <Link href={'https://t.co/46NFU3RtaA'} target='blank'>
                     <FaLinkedin />
                   </Link>
                 </div>

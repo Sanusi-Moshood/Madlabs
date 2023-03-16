@@ -9,7 +9,7 @@ const Loading = () => {
     var tl = gsap.timeline();
     let mm = gsap.matchMedia();
 
-    mm.add('(max-width: 500px', () => {
+    mm.add('(max-width: 700px', () => {
       tl.to('#centre', {
         delay: 2.5,
         width: '4rem',
@@ -28,8 +28,8 @@ const Loading = () => {
         )
         .to('#centre', {
           duration: 1,
-          width: '100px',
-          height: '200px',
+          width: '300px',
+          height: '300px',
         })
         .to('#img3', {
           height: 0,
