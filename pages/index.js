@@ -526,9 +526,7 @@ export default function Home() {
             <div className={styles.wtext}>
               <div className={styles.wsub}>
                 <div className={styles.wsubt}>
-                  <h3>
-                    <span>A Collection of Memes I made for Overworld </span>😂
-                  </h3>
+                  <h3>A Collection of Memes I made for Overworld 😂</h3>
                   <p>
                     <Link
                       href={
@@ -543,10 +541,7 @@ export default function Home() {
 
                 <div className={styles.wsubt}>
                   <h3>
-                    <span>
-                      A thread of feature i look forward to seeing in overworld{' '}
-                    </span>
-                    🎮
+                    A thread of feature i look forward to seeing in overworld 🎮
                   </h3>
                   <p>
                     <Link
@@ -560,9 +555,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className={styles.wsubt}>
-                  <h3>
-                    <span>I used overworld frame as my pfp</span>🖼
-                  </h3>
+                  <h3>I used overworld frame as my pfp🖼</h3>
                   <p>
                     <Link
                       href={
@@ -575,9 +568,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className={styles.wsubt}>
-                  <h3>
-                    <span>I made more memes for Overworld </span>😂
-                  </h3>
+                  <h3>I made more memes for Overworld 😂</h3>
                   <p>
                     {' '}
                     <Link
