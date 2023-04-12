@@ -2,12 +2,21 @@
   margin: 0;
   padding: 0;
 }
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
 html {
   font-size: 4vw;
 }
 
 body {
-  background-color: #a1deff;
+  background-color: #f9f9f9;
   color: rgb(0, 0, 0);
   font-family: 'Inter', sans-serif;
 }
@@ -31,7 +40,7 @@ h6 {
   -webkit-mix-blend-mode: color;
   -moz-mix-blend-mode: color; /* Firefox */
   -o-mix-blend-mode: color; /* Opera */
-  background: linear-gradient(157.64deg, #f950ff 52.95%, #744dff 92.06%);
+  background: linear-gradient(112.62deg, #ff1212 29.4%, #ff4517 105.15%);
 }
 #nav {
   background-color: transparent;
@@ -55,10 +64,10 @@ h6 {
   left: -4%;
   background: radial-gradient(
     75% 194% at 48.5% 52.25%,
-    #5ce8b5 0%,
-    #7c53ff 34.2%,
+    #ff6d6db3 0%,
+    #ffae7fbf 34.2%,
     #f796ff 64.4%,
-    #47c4ee 100%
+    #fcb6d29c 100%
   );
   position: absolute;
 }
@@ -68,10 +77,10 @@ h6 {
   border-radius: 50%;
   background: radial-gradient(
     75% 194% at 48.5% 52.25%,
-    #5ce8b5 0%,
-    #7c53ff 34.2%,
+    #ff6d6db3 0%,
+    #ffae7fbf 34.2%,
     #f796ff 64.4%,
-    #47c4ee 100%
+    #fcb6d29c 100%
   );
   filter: blur(80px);
   right: -4%;
@@ -101,7 +110,7 @@ section {
   --grey1: #fefefe;
   --grey2: #949494;
   --orange: #dc600e;
-  --purple: #2422ac;
+  --purple: #ff4517;
 }
 
 .footer {
@@ -167,13 +176,13 @@ section {
   max-height: 200px;
 }
 .faq_active {
-  background: linear-gradient(112.62deg, #2422ac 29.4%, #4b154e 105.15%);
+  background: linear-gradient(112.62deg, #ff1212 29.4%, #ff4517 105.15%);
   color: whitesmoke;
 }
 .faq-question div:hover {
   border-color: #101001;
 }
 .faq-item:hover {
-  background: linear-gradient(112.62deg, #2422ac 29.4%, #4b154e 105.15%);
+  background: linear-gradient(112.62deg, #ff1212 29.4%, #ff4517 105.15%);
   color: whitesmoke;
 }

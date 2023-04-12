@@ -140,14 +140,14 @@
 }
 
 .tblue {
-  background: linear-gradient(112.62deg, #2422ac 29.4%, #4b154e 105.15%);
+  background: linear-gradient(112.62deg, #ff1212 29.4%, #ff4517 105.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
 .htext button {
-  background: linear-gradient(112.62deg, #2422ac 29.4%, #4b154e 105.15%);
+  background: linear-gradient(112.62deg, #ff1212 29.4%, #ff4517 105.15%);
 
   padding: 16px 32px;
   font-weight: 600;
@@ -189,10 +189,10 @@
 .aic {
   width: 40%;
   display: block;
-  max-height: 215px;
+  /* max-height: 215px; */
 }
 .aicbutton {
-  background: linear-gradient(112.62deg, #2422ac 29.4%, #4b154e 105.15%);
+  background: linear-gradient(112.62deg, #ff1212 29.4%, #ff4517 105.15%);
 
   padding: 16px 32px;
   font-weight: 600;
@@ -210,8 +210,7 @@
   object-fit: cover;
   object-position: center;
   position: relative;
-  max-height: 500px;
-  object-position: top;
+  /* max-height: 500px; */
 }
 .atext,
 .ftext,
@@ -232,7 +231,7 @@
 }
 .ahead svg,
 .thead svg {
-  color: #e20000;
+  color: #ff4517;
 }
 .ap {
   font-size: 25px;
@@ -297,11 +296,7 @@
 }
 .wsubt h3 span,
 .msubt h3 span {
-  background: linear-gradient(112.62deg, #2422ac 29.4%, #4b154e 105.15%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: #ff1212;
 }
 
 .wsubt p,
@@ -348,20 +343,20 @@
 .border2 {
   width: 2px;
   height: 250px;
-  background: linear-gradient(112.62deg, #2422ac 29.4%, #4b154e 105.15%);
+  background: linear-gradient(112.62deg, #ff1212 29.4%, #ff4517 105.15%);
   margin-right: 40px;
 }
 
 .border::after {
   content: '01';
-  color: #1d002f;
+  color: #ff4517;
   font-size: 20px;
   font-weight: 600;
   padding-left: 10px;
 }
 .border2::after {
   content: '02';
-  color: #1d002f;
+  color: #ff4517;
   font-size: 20px;
   font-weight: 600;
   padding-left: 10px;
@@ -382,7 +377,7 @@
   gap: 10px;
   flex-direction: column;
   background-color: #ffffff;
-  border-color: #1d002f;
+  border-color: #ff4517;
   border-width: 0.5px;
   padding: 5px 10px 5px 10px;
 
@@ -393,6 +388,9 @@
   height: 270px;
   background-color: white;
   position: relative;
+}
+.timg img {
+  object-fit: cover !important;
 }
 .ttext {
   text-align: center;
@@ -408,7 +406,7 @@
 }
 .ttext svg {
   font-size: 20px;
-  color: #1d002f;
+  color: #ff4517;
 }
 .ticn {
   display: flex;

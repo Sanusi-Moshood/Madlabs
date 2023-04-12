@@ -4,14 +4,14 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger.js';
 import Link from 'next/link';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import hImg from '../public/himggg.png';
-import wImg from '../public/worthy.png';
-import iwImg from '../public/footer.png';
-import aImg from '../public/himg2.png';
-import rImg from '../public/rmap.png';
-import mImg from '../public/mint.png';
-import dImg from '../public/disc.png';
-import hhImg from '../public/homei.png';
+import hImg from '../public/m2.png';
+import wImg from '../public/m4.png';
+import iwImg from '../public/m3.png';
+import aImg from '../public/m5.png';
+import rImg from '../public/m6.png';
+import mImg from '../public/b1.png';
+import dImg from '../public/m8.png';
+import hhImg from '../public/m7.png';
 import faqData from '../components/faqData';
 import FaqItem from '../components/FaqItem';
 import { GiShardSword } from 'react-icons/gi';
@@ -36,13 +36,13 @@ export default function Home() {
         <div className={styles.hcont}>
           <div className={styles.htext}>
             <h1>
-              Dive into the world of
-              <span className={styles.tblue}> Overworld </span> and create your
-              own <span className={styles.tblue}>destiny</span>
+              Join the <span className={styles.tblue}> Mad Lads </span>
+              revolution the first ever xNFT collection launched via
+              <span className={styles.tblue}> Backpack </span>
             </h1>
             <span className={styles.htextspan}>
-              Enter a world of endless adventure and unleash your inner hero
-              with Overworld
+              Mad Lads dares to be different, with an edgy attitude and a
+              limited supply of unique xNFTs
             </span>
             <div>
               <button
@@ -50,7 +50,7 @@ export default function Home() {
                   handleScroll(e, '#worthy');
                 }}
               >
-                Become Worthy <HiArrowNarrowRight />
+                FOCK IT, Mint Now!
               </button>
             </div>
           </div>
@@ -67,40 +67,32 @@ export default function Home() {
               <Image src={aImg} className={styles.aicimg} />
             </div>
             <div className={styles.atext}>
-              <h2 className={styles.ahead}>
-                <span>
-                  <GiShardSword />
-                </span>
-                About Overworld
-                <span>
-                  <GiShardSword className='shard-sword' />
-                </span>
-              </h2>
+              <h2 className={styles.ahead}>About MadLads</h2>
               <p className={styles.ap}>
-                Overworld is an ambitious 3D multiplayer RPG that offers a wide
-                range of experiences, from battling an army of undead to ruling
-                your city, to fishing the great seas!
+                Welcome to Mad Lads, the first-ever xNFT collection launched via
+                Backpack. At Mad Lads, we're all about pushing the boundaries of
+                what's possible with blockchain technology. Our limited-edition
+                xNFTs are designed to be unique, edgy, and rebellious – just
+                like the community of blockchain enthusiasts we serve.
               </p>
               <p className={styles.ap}>
-                Our mission is to create a gaming universe that you can fall in
-                love with, with deep, engaging gameplay, high-fidelity graphics,
-                and a multi-year content roadmap that will keep you coming back
-                for more.
+                Our mission is to make it easy for anyone to own and trade their
+                favorite xNFTs, without the complexity and confusion that often
+                comes with multi-chain wallets. That's why we're thrilled to be
+                partnering with Backpack, the innovative cross-chain wallet that
+                makes it simple to access all your xNFTs in one place.
               </p>
-              <button className={styles.aicbutton}>Are you Worthy?</button>
+              <button className={styles.aicbutton}>How Mad are you?</button>
             </div>
           </div>
         </div>
       </section>
       <section id={'worthy'}>
         <div className={styles.container}>
-          <h2 className={styles.thead}>
-            <span>🥇</span>
-            Become Worthy 🥇
-          </h2>
+          <h2 className={styles.thead}>How Mad Are You? 😡</h2>
           <p className={styles.wsm}>
-            Looking to be deemed WORTHY to get your Mint Pass NFT? 🗝️✨ Use
-            hashtag #BeWorthy and show us just how WORTHY you are. ❤️ 💬 🔁
+            Are you ready to get MAD and get a madlist? Here are some tips on
+            how to show the Mad Lads community just how MAD you can be
           </p>
           <div className={styles.wflex}>
             <div className={styles.wic}>
@@ -111,34 +103,45 @@ export default function Home() {
               <div className={styles.wsub}>
                 <div className={styles.wsubt}>
                   <h3>
-                    🔮 <span>Unrivaled Creativity</span>
+                    <span> Think outside the box 🤔</span>
                   </h3>
                   <p>
-                    Creativity can come in many shapes and sizes! 🎨🖊️ Lore,
-                    art, creations, or original memes... Use your imagination
-                    and creativity to share your vision of Overworld! If you use
-                    AI, say it :) The WORTHY are honest and authentic!
+                    We love originality and creativity, so don't be afraid to
+                    push the limits and come up with something truly unique.
+                    Whether it's a meme video, a tutorial, a blog post, or even
+                    a song, the madder the better!
                   </p>
                 </div>
                 <div className={styles.wsubt}>
                   <h3>
-                    🎉 <span>Vibrant Participation</span>
+                    <span> Share your content on Twitter 🐦</span>
                   </h3>
                   <p>
-                    There is no Overworld without community! The WORTHY are the
-                    ones who show up and make their presence known and bring new
-                    followers into the community! Comment, retweet, like, and
-                    participate consistently! Raid tweets and spread the word!📣
+                    To be eligible for madlist, your content should be
+                    high-quality and relevant to Backpack or Mad Lads. We want
+                    to see your creativity and enthusiasm for our project shine
+                    through!
                   </p>
                 </div>
                 <div className={styles.wsubt}>
                   <h3>
-                    💡 <span>Profound Wisdom</span>
+                    <span>Keep it Backpack or Mad Lads related 🎒 </span>
                   </h3>
                   <p>
-                    We love great ideas, and we love hearing new ones we have
-                    yet to consider.🧠 Share your wisdom and insights in posts
-                    and threads to help us grow together.
+                    To be eligible for madlist, your content should be
+                    high-quality and relevant to Backpack or Mad Lads. We want
+                    to see your creativity and enthusiasm for our project shine
+                    through!
+                  </p>
+                </div>
+                <div className={styles.wsubt}>
+                  <h3>
+                    <span>Show us what you've got and join the MADNESS!</span>
+                  </h3>
+                  <p>
+                    📌 To participate, tag or reply to our accounts on Twitter
+                    and post the link to your tweet in 🏟️ | #content-arena on
+                    our Discord server. Remember, the madder the better! 😜
                   </p>
                 </div>
               </div>
@@ -153,34 +156,31 @@ export default function Home() {
             Mint Info
           </h2>
           <p className={styles.wsm}>
-            To be part of the Overworldplay community you need to be worthy to
+            To be part of the MadLadsNFT community you need to be worthy to
             receive the KEY MINT PASS, you can get this mint pass by supporting
-            the Overworldplay community
+            the MadLadsNFT community
           </p>
           <div className={styles.mflex}>
             <div className={styles.msub}>
               <div className={styles.msubt}>
                 <div>
                   <h3>
-                    <span> Supply</span>
+                    <span> Supply: 10,000</span>
                   </h3>
-                  <p>To be announced📣</p>
                 </div>
               </div>
               <div className={styles.msubt}>
                 <div>
                   <h3>
-                    📅 <span>MInt Date</span>
+                    📅 <span>MInt Date: 4/20</span>
                   </h3>
-                  <p>To be announced📣</p>
                 </div>
               </div>
               <div className={styles.msubt}>
                 <div>
                   <h3>
-                    💰 <span>Mint Price</span>
+                    💰 <span>Mint Price: 6.9 sol</span>
                   </h3>
-                  <p>To be announced📣</p>
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.rmap} id='roadmap'>
+      {/* <section className={styles.rmap} id='roadmap'>
         <h2 className={styles.thead}>
           <span>
             <GiShardSword />
@@ -231,7 +231,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section>
         <div className={styles.container}>
@@ -240,257 +240,77 @@ export default function Home() {
           <div className={styles.tflex}>
             <div className={styles.tcont}>
               <div className={styles.timg}>
-                <Image src={'/three.png'} fill />
+                <Image src={'/m4.png'} fill />
               </div>
               <div className={styles.ttext}>
-                <h3>#Overworld</h3>
+                <h3>#MadLads</h3>
               </div>
             </div>
             <div className={styles.tcont}>
               <div className={styles.timg}>
-                <Image src={'/himg2.png'} fill objectFit='contain' />
+                <Image src={'/m7.png'} fill objectFit='contain' />
               </div>
               <div className={styles.ttext}>
-                <h3>#Overworld</h3>
+                <h3>#MadLads</h3>
               </div>
             </div>
             <div className={styles.tcont}>
               <div className={styles.timg}>
-                <Image src={'/key.png'} fill objectFit='contain' />
+                <Image src={'/m5.png'} fill objectFit='contain' />
               </div>
               <div className={styles.ttext}>
-                <h3>#Overworld</h3>
+                <h3>#MadLads</h3>
               </div>
             </div>
             <div className={styles.tcont}>
               <div className={styles.timg}>
-                <Image src={'/himgg.png'} fill objectFit='contain' />
+                <Image src={'/m6.png'} fill objectFit='contain' />
               </div>
               <div className={styles.ttext}>
-                <h3>#Overworld</h3>
+                <h3>#MadLads</h3>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/m8.png'} fill objectFit='contain' />
+              </div>
+              <div className={styles.ttext}>
+                <h3>#MadLads</h3>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/m3.png'} fill objectFit='contain' />
+              </div>
+              <div className={styles.ttext}>
+                <h3>#MadLads</h3>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/m10.png'} fill objectFit='contain' />
+              </div>
+              <div className={styles.ttext}>
+                <h3>#MadLads</h3>
+              </div>
+            </div>
+            <div className={styles.tcont}>
+              <div className={styles.timg}>
+                <Image src={'/m9.png'} fill objectFit='contain' />
+              </div>
+              <div className={styles.ttext}>
+                <h3>#MadLads</h3>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section id={'team'}>
-        <div className={styles.container}>
-          <h2 className={styles.thead}>
-            <span>
-              <GiShardSword />
-            </span>
-            {'  '}
-            Team {'  '}
-            <span>
-              <GiShardSword className='shard-sword' />
-            </span>
-          </h2>
-
-          <div className={styles.tflex}>
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/001.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>Jeremy Horn</h3>
-                <h5>Founder</h5>
-                <div className={styles.ticn}>
-                  <Link
-                    href={'https://twitter.com/HeyJeremyHorn'}
-                    target='blank'
-                  >
-                    <FaTwitter />
-                  </Link>
-                  <Link href={'https://t.co/NptP1My9sI'} target='blank'>
-                    <FaLinkedin />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/004.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>John Haris</h3>
-                <h5>Vp of Tech</h5>
-                <div className={styles.ticn}>
-                  <Link href={'#'}>
-                    <FaTwitter />
-                  </Link>
-                  <Link href={'https://t.co/iP0XoB5LAc'} target='blank'>
-                    <FaLinkedin />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/002.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>James Hall</h3>
-                <h5>Creative Director</h5>
-                <div className={styles.ticn}>
-                  <Link href={'https://twitter.com/The_Arkrael'} target='blank'>
-                    <FaTwitter />
-                  </Link>
-                  <Link href={'https://t.co/iMpYz0h5OF'} target='blank'>
-                    <FaLinkedin />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/005.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>Tom Tang</h3>
-                <h5>Director Of design</h5>
-                <div className={styles.ticn}>
-                  <Link href={'#'}>
-                    <FaTwitter />
-                  </Link>
-                  <Link href={'https://t.co/KiJDMQGZ2k'} target='blank'>
-                    <FaLinkedin />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/006.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>Stojan Madjunkov</h3>
-                <h5>Director of Product</h5>
-                <div className={styles.ticn}>
-                  <Link href={'#'}>
-                    <FaTwitter />
-                  </Link>
-                  <Link href={'https://t.co/D1BzujdvxV'}>
-                    <FaLinkedin />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/007.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>Yitao Guan</h3>
-                <h5>Advisor</h5>
-                <div className={styles.ticn}>
-                  <Link href={'#'}>
-                    <FaTwitter />
-                  </Link>
-                  <Link href={'https://t.co/TxL1SPFLAi'} target='blank'>
-                    <FaLinkedin />
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/008.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>Brian Wilson</h3>
-                <h5>Associate Art Director</h5>
-                <div className={styles.ticn}>
-                  <Link href={'#'}>
-                    <FaTwitter />
-                  </Link>
-                  <Link href={'https://t.co/5HSM3DjDQC'} target='blank'>
-                    <FaLinkedin />
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/009.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>Anthony Ulrich</h3>
-                <h5>Lead Gameplay Engineer</h5>
-                <div className={styles.ticn}>
-                  <Link href={'#'}>
-                    <FaTwitter />
-                  </Link>
-                  <Link href={'https://t.co/W5oCVh5Vh0'} target='blank'>
-                    <FaLinkedin />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/010.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>Micheal Maurino</h3>
-                <h5>Lead Concept Artist</h5>
-                <div className={styles.ticn}>
-                  <Link href={'#'}>
-                    <FaTwitter />
-                  </Link>
-                  <Link href={'https://t.co/SujoAHh0pt'} target='blank'>
-                    <FaLinkedin />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className={styles.tcont}>
-              <div className={styles.timg}>
-                <Image src={'/003.jpeg'} fill />
-              </div>
-              <div className={styles.ttext}>
-                <h3>Darren Lue</h3>
-                <h5>Community Manager</h5>
-                <div className={styles.ticn}>
-                  <Link href={'https://twitter.com/blind_gg'} target='blank'>
-                    <FaTwitter />
-                  </Link>
-                  <Link href={'https://t.co/46NFU3RtaA'} target='blank'>
-                    <FaLinkedin />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div className={styles.container}>
-        <div className={styles.pflex}>
-          <Image width={'300'} height='60' src={'/Group 42991.svg'} />
-
-          <Image width={'103'} height='100' src={'/alpha.png'} />
-          <Image width={'58'} height='60' src={'/Vector.svg'} />
-          <Image width={'103'} height='100' src={'/ape.jpg'} />
-          <Image width={'103'} height='60' src={'/Vector-1.svg'} />
-          <Image width={'103'} height='100' src={'/aperion.png'} />
-        </div>
-      </div>
 
       <section id={'faq'}>
         <div className={styles.abcont}>
           <div className={styles.aflex}>
             <div className={styles.ftext}>
-              <h2 className={styles.ahead}>
-                <span>
-                  <GiShardSword />
-                </span>
-                FAQ
-                <span>
-                  <GiShardSword className='shard-sword' />
-                </span>
-              </h2>
+              <h2 className={styles.ahead}>FAQ</h2>
               <div className={styles.ff}>
                 {faqData.map((item) => (
                   <FaqItem
@@ -508,7 +328,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      {/* 
       <section id={'worthy'}>
         <div className={styles.container}>
           <h2 className={styles.thead}>
@@ -526,7 +346,7 @@ export default function Home() {
             <div className={styles.wtext}>
               <div className={styles.wsub}>
                 <div className={styles.wsubt}>
-                  <h3>A Collection of Memes I made for Overworld 😂</h3>
+                  <h3>A Collection of Memes I made for MadLads 😂</h3>
                   <p>
                     <Link
                       href={
@@ -541,7 +361,7 @@ export default function Home() {
 
                 <div className={styles.wsubt}>
                   <h3>
-                    A thread of feature i look forward to seeing in overworld 🎮
+                    A thread of feature i look forward to seeing in MadLads 🎮
                   </h3>
                   <p>
                     <Link
@@ -555,7 +375,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className={styles.wsubt}>
-                  <h3>I used overworld frame as my pfp🖼</h3>
+                  <h3>I used MadLads frame as my pfp🖼</h3>
                   <p>
                     <Link
                       href={
@@ -568,7 +388,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className={styles.wsubt}>
-                  <h3>I made more memes for Overworld 😂</h3>
+                  <h3>I made more memes for MadLads 😂</h3>
                   <p>
                     {' '}
                     <Link
@@ -585,7 +405,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

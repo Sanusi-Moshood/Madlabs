@@ -28,7 +28,7 @@ export default function Navbar() {
     <div className={styles.container} id='nav'>
       <nav className={styles.nav}>
         <div className={styles.logo}>
-          <Image src={'/logb.svg'} id={'intlog'} fill />
+          <Image src={'/m1.png'} id={'intlog'} fill />
         </div>
         <div className={styles.nvrc}>
           <div
@@ -71,16 +71,16 @@ export default function Navbar() {
             </Link>
             <Link
               onClick={(e) => {
-                handleScroll(e, '#roadmap');
+                handleScroll(e, '#faq');
               }}
-              href={'#roadmap'}
+              href={'#faq'}
               className={`${styles.link} ${
                 pathname === '/service' ? styles.active : ''
               }`}
             >
-              Roadmap
+              Faq
             </Link>
-            <Link
+            {/* <Link
               onClick={(e) => {
                 handleScroll(e, '#team');
               }}
@@ -90,7 +90,7 @@ export default function Navbar() {
               }`}
             >
               Team
-            </Link>
+            </Link> */}
           </div>
           <div className={styles.nico}>
             <Link href={'https://twitter.com/OverworldPlay'} target='blank'>
