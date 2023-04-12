@@ -51,6 +51,11 @@ h6 {
     height: 66px;
   }
 }
+@supports (-webkit-touch-callout: none) {
+  .nv-overlay {
+    display: none;
+  }
+}
 .nv-overlay .oc1,
 .nv-overlay .oc2 {
   height: 20px;

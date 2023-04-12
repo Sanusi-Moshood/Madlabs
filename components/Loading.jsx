@@ -26,7 +26,7 @@ const Loading = () => {
 
   return (
     <div>
-      <video autoPlay muted loop id='video-background'>
+      <video autoPlay playsInline muted loop id='video-background'>
         <source src='/lo.mp4' type='video/mp4' />
       </video>
     </div>
