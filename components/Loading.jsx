@@ -13,14 +13,14 @@ const Loading = () => {
       tl.to('#video-background', {
         height: 0,
         duration: 0.5,
-        delay: 25,
+        delay: 17.5,
       });
     });
 
     tl.to('#video-background', {
       height: 0,
       duration: 0.5,
-      delay: 25,
+      delay: 17.5,
     });
   }, []);
 
